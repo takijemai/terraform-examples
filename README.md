@@ -1,3 +1,4 @@
+# Ejemplos de despliegues Terraform en OpenStack y GCP
 ## OpenStack
 
 Ejemplos variados que concluyen con aplicación PHP de ejemplo para Sporting Goods sobre una base de datos MySQL. La aplicación se despliega con Terraform en dos máquinas virtuales (mysql y webapp) sobre OpenStack-DI.
@@ -26,7 +27,7 @@ Ejemplos variados que concluyen con un depsliegue Docker Compose con una aplicac
 
 ### Configuración
 
-* [Descarga las credenciales del proyecto GCP](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys) y guárdalas en un archivo `gcp-identity.json`.
+* [Descarga las credenciales del proyecto GCP](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating_service_account_keys) y guárdalas en un archivo `GCP/gcp-identity.json`.
 * En cada carpeta de ejemplo, configura las variables `gcp-username` y `gcp-project` con sus valores correspondientes.
 
 ## Despliegue
