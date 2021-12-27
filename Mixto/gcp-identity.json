@@ -1,12 +1,12 @@
 {
   "type": "service_account",
-  "project_id": "xxx",
-  "private_key_id": "xxx",
-  "private_key": "xxx",
-  "client_email": "xxx",
-  "client_id": "xxx",
+  "project_id": "cc2021-jt800",
+  "private_key_id": "d312ec601440f95797cfa2666b6d17c13134b395",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxuTDOVDPtI9dv\nVk+vF7jC95Rhlgvy15Fj/zULDDzmdT2/q+VHNcryl0M5xLTog/JHreWleZk/AECq\n+oZn0MpN1aeSuzx+ZF1vA5cfXDAi43t5Velxz7BARxDbsrJUSmmj/X4uVMD5Gbm6\n7gW3e/WsO48rscjj2fjOss0kk3jAYMR9FPzK3QhL4/Ns87fiGnm6iDM9bBhcsMt2\nqUki3+x+9pfKCNWKwmGe8VXNlkZaUkO4DK9Ov/uig+wSXYN88bwrVLieP3dR2Kw5\nWKmfwP87iMG7kURCfj6pOjsMy8+7a6vHG53Woorktayy1eMR12ThBwinhIHPKVBE\nKvFK7hV7AgMBAAECggEAICSbVCXcgl5CH4vfu44xx2lZt9CYdqJQVGKa6FWdSh0Y\nPutK+3caLof3C6KtCYSbtCUabLQyaDeWepX26x3TCQLEXQBqL33dfC+NDIny1syH\nz2kfYIssmGOCBAoswJv4wUUepiiEAkmJ0uortITB6RWYjlGIQNVyb4fdHGljpH9O\np82vJt845vtF5xH4wY9I0JdNrWyg0dsuIii874mfsPzU3PeObJMu0WtCwHkkYz5/\nxWsZatxcUjtGYQYxG9t4y+vID6ngrEQIdMs700bK6oIJTr3bW80syDd0dCYRkcMo\nXunYGgO2B+k2kZLewV3g2oMZOnP7GHjGIbTAoJHoQQKBgQDgovzg7UFp+kcOEksn\nFeGs2bQLzAhE2GUlpAmUy2DPNhAWSkLHwCGrAeY8SrruqysqMrXj9wLYd9Fl6+cH\nT7rOGT0WJTS0kgWhrMEIXoFb4LilSmbSCMDzzpAND1f6PGQdbj6U+yIp7hgqV6gh\nUO5FZIKlBdWf0R7FRSYpWAqPIQKBgQDKiWss5Pb1+vVR+/RQL9omcowY//N9gOIO\nSNT8BO/v2eXAzpNKU96PrldxzySVgrpwtqDV4iSb6GwO926ORkx9/ZrisgTFVoTy\n/VcPdT41Xye3WNfPeJly6OoNQZUk30aTa8zV+c6xGYioKDhElqxMbFdifx85Jteq\nto9pK5JdGwKBgQDW3/FmsmwtFIOdWTBcHdk2PzSzSCLsv9XY8JVdqEFdVEiFGdnR\nOt65tmJmb9Fp9X+fqMxGWIR3Tf2WMdZXLxPwi0HcihBlXXxXj2lCOSwiF85oBche\nxpLTZFZ0t6WfLt9RK6BfX+3pD+A7uIeR/tk8tY0mj3MtoZp+dsuvJpFLIQKBgQCM\nLnCvsgn8VqZVCD4hAf3LfpzY8M5mnz3XBTHk/MXVDMuol1H6r/HrIJAFhYmcsc65\nFK5dWxhbkJK6CSfL8Xwf99er7+q9axS52f7YBB36ctHaZPN59c6/adYVNr8zthXz\nEznDIBOfID0lpjDLyD2Y56PT2IiT1f6Peavo7u9u4QKBgAOItW8MS3qjc6HKfvq5\nAtu8Iw3qNsxzXJ0kU8Ujg0BJVX9GqUeAoqZzYrE1ZNEUqQlOn1c84gCYATqBb1YF\nX9VlsldTzVMLsz5EwY5+4bvlUE125yO/OSyLS8wIflxGizW48bUGTw6qndUMEBI+\nZCK89cOHUL8VQm8IlU/5lSFB\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@cc2021-jt800.iam.gserviceaccount.com",
+  "client_id": "110546633634514298949",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "xxx"
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40cc2021-jt800.iam.gserviceaccount.com"
 }
