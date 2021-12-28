@@ -1,7 +1,12 @@
-# *** YOUR CODE HERE ***
-# Definir 3 variables
-# * gcp_username inicializada con el nombre de usuario en GCP
-# * gcp_project inicializada con el nombre del proyecto en GCP
+variable "gcp-username" {
+  description = "GCP user name"
+  default     = "jt800@inlumine.ual.es"
+}
+
+variable "gcp-project" {
+  description = "GCP project"
+  default     = "cc2021-jt800"
+}
 # * gcp_bucket_name inicializada con el nombre del bucket a crear en Google Storage
 # **********************
 
