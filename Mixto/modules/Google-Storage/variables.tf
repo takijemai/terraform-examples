@@ -9,7 +9,7 @@ variable "gcp-project" {
 }
 variable "gcp_bucket_name"{
  description = "GCP bucket Name"
-  default     = "bucket-name"
+  default     = "gcp-bucket"
 }
 
 
