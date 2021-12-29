@@ -1,6 +1,6 @@
 variable "gcp-username" {
   description = "GCP user name"
-  default     = "jt800@inlumine.ual.es"
+  default     = "jt800"
 }
 
 variable "gcp-project" {
