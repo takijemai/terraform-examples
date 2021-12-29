@@ -7,9 +7,10 @@ required_providers {
 }
 
 provider "google" {
-credentials = file("../cc2021-jt800-d312ec601440.json")
+     version = "3.5.0"
+credentials = file("../gcp-identity.json")
 
-  project = var."cc2021-jt800"
+  project = var.gcp-project
   region  = "us-central1"
   zone    = "us-central1-c"
 }
