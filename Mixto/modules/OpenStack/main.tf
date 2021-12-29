@@ -100,7 +100,6 @@ data "template_file" "setup-app-docker" {
 }
 
 #Crear nodo APP
-resource "openstack_compute_instance_v2" "book_app" {
 # *** YOUR CODE HERE ***
 # Configuración de la instancia denominada book_app 
 # conectada a la red del proyecto e inicializada 
