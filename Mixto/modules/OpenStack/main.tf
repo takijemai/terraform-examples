@@ -72,7 +72,7 @@ resource "openstack_compute_instance_v2" "book_api" {
 
   depends_on = [time_sleep.wait_5_minutes ]
 
-}
+
 # *** YOUR CODE HERE ***
 # Asignarle una dirección IP flotante
 # **********************
@@ -120,7 +120,7 @@ data "template_file" "setup-app-docker" {
 }
 
   user_data = data.template_file.setup-app-docker.rendered
-}
+
 
 # *** YOUR CODE HERE ***
 # Asignarle una dirección IP flotante
