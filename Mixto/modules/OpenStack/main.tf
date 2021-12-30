@@ -61,11 +61,12 @@ resource "openstack_compute_instance_v2" "book_api" {
   flavor_name       = "medium"
   key_pair          = var.openstack_keypair
   security_groups   = ["default"]
+  
   network {
     name = "jt800-net"
   }
 
-  user_data = file("setup-api-docker.tpl")
+  )
   
   
   user_data = data.template_file.setup-api-docker.rendered
@@ -121,7 +122,7 @@ data "template_file" "setup-app-docker" {
     name = "jt800-net"
   }
 
-  user_data = file("setup-app-docker.tpl")
+  
   user_data = data.template_file.setup-app-docker.rendered
     
 }
