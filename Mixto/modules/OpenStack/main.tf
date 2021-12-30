@@ -65,20 +65,11 @@ resource "openstack_compute_instance_v2" "book_api" {
   network {
     name = "jt800-net"
   }
-
-  )
-  
-  
   user_data = data.template_file.setup-api-docker.rendered
 
   depends_on = [time_sleep.wait_5_minutes ]
-  
-  
-}
-
-  
-
-
+  }
+ 
 # *** YOUR CODE HERE ***
 # Asignarle una dirección IP flotante
 # **********************
@@ -121,8 +112,7 @@ data "template_file" "setup-app-docker" {
   network {
     name = "jt800-net"
   }
-
-  
+ 
   user_data = data.template_file.setup-app-docker.rendered
     
 }
