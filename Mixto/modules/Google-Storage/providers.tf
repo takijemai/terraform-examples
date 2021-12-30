@@ -7,7 +7,7 @@ required_providers {
 }
 
 provider "google" {
-     version = "3.5.0"
+     
 credentials = file("Mixto/gcp-identity.json")
 
   project = var.gcp-project
