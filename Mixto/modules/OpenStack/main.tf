@@ -66,11 +66,16 @@ resource "openstack_compute_instance_v2" "book_api" {
   }
 
   user_data = file("setup-api-docker.tpl")
-}
-
+  
+  
   user_data = data.template_file.setup-api-docker.rendered
 
   depends_on = [time_sleep.wait_5_minutes ]
+  
+  
+}
+
+  
 
 
 # *** YOUR CODE HERE ***
@@ -117,11 +122,9 @@ data "template_file" "setup-app-docker" {
   }
 
   user_data = file("setup-app-docker.tpl")
-}
-
   user_data = data.template_file.setup-app-docker.rendered
-
-
+    
+}
 # *** YOUR CODE HERE ***
 # Asignarle una dirección IP flotante
 # **********************
