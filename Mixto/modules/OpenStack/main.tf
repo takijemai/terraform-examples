@@ -5,7 +5,7 @@
 # **********************
 resource "openstack_compute_instance_v2" "mysql" {
   name              = "mysql"
-  image_name        = "Ubuntu 16.04 LTS"
+  image_id     = "5b7ee726-db11-4987-b5a9-6284a83be58e"
   availability_zone = "nova"
   flavor_name       = "medium"
   key_pair          = var.openstack_keypair
@@ -18,19 +18,7 @@ resource "openstack_compute_instance_v2" "mysql" {
 }
 
 
-resource "openstack_networking_floatingip_v2" "mysql_ip" {
-  pool = "ext-net"
-}
 
-resource "openstack_compute_floatingip_associate_v2" "mysql_ip" {
-  floating_ip = openstack_networking_floatingip_v2.mysql_ip.address
-  instance_id = openstack_compute_instance_v2.mysql.id
-}
-
-output MySQL_Floating_IP {
-  value      = openstack_networking_floatingip_v2.mysql_ip.address
-  depends_on = [openstack_networking_floatingip_v2.mysql_ip]
-}
 
 
 # Configura el archivo de plantilla para la API
@@ -49,6 +37,19 @@ resource "time_sleep" "wait_5_minutes" {
 
   create_duration = "5m"
 }
+resource "openstack_networking_floatingip_v2" "mysql_ip" {
+  pool = "ext-net"
+}
+
+resource "openstack_compute_floatingip_associate_v2" "mysql_ip" {
+  floating_ip = openstack_networking_floatingip_v2.mysql_ip.address
+  instance_id = openstack_compute_instance_v2.mysql.id
+}
+
+output mysql_Floating_IP {
+  value      = openstack_networking_floatingip_v2.mysql_ip.address
+  depends_on = [openstack_networking_floatingip_v2.mysql_ip]
+}
 # *** YOUR CODE HERE ***
 # Configuración de la instancia denominada book_api 
 # conectada a la red del proyecto e inicializada 
@@ -56,7 +57,7 @@ resource "time_sleep" "wait_5_minutes" {
 # **********************
 resource "openstack_compute_instance_v2" "book_api" {
   name              = "book_api"
-  image_name        = "Ubuntu 16.04 LTS"
+  image_id       = "5b7ee726-db11-4987-b5a9-6284a83be58e"
   availability_zone = "nova"
   flavor_name       = "medium"
   key_pair          = var.openstack_keypair
@@ -104,7 +105,7 @@ data "template_file" "setup-app-docker" {
 # **********************
   resource "openstack_compute_instance_v2" "book_app" {
   name              = "book_app"
-  image_name        = "Ubuntu 16.04 LTS"
+  image_id      = "5b7ee726-db11-4987-b5a9-6284a83be58e"
   availability_zone = "nova"
   flavor_name       = "medium"
   key_pair          = var.openstack_keypair
@@ -136,3 +137,4 @@ output book_app_Floating_IP {
 # *** YOUR CODE HERE ***
 # Mostrar las direcciones IP generadas
 # **********************
+
